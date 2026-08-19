@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Databases (runtime data - do NOT commit)
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets
+.env
+config.json
+.backup_token
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
