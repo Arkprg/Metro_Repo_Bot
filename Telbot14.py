@@ -2,6 +2,7 @@ import datetime             # Telbot14
 import json
 import sqlite3
 import logging
+import os
 import jdatetime
 import pytz
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, KeyboardButton, ReplyKeyboardMarkup
@@ -26,7 +27,7 @@ def load_config():
         logger.error("❌ Error reading config file. Please check.")
         return {}
 
-DB_NAME = "customers.db"
+DB_NAME = os.environ.get("DB_NAME", "customers.db")
 AUTHORIZED_USER = "989374550876"
 AUTHORIZED_USER1 = "989123946459"
 
